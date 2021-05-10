@@ -1,0 +1,17 @@
+header:
+  - titles: 
+      en      : &EN       Home
+    url : /index.html#home
+  
+  - titles: 
+      en      : &EN       Topics
+    url : /index.html#topics
+
+  - titles: 
+      en      : &EN       Dates
+    url : /index.html#dates
+  
+  - titles: 
+      en      : &EN       Organization
+    url : /index.html#organization
+    
