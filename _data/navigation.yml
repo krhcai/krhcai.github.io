@@ -8,6 +8,10 @@ header:
     url : /index.html#topics
 
   - titles: 
+      en      : &EN       Submissions
+    url : /index.html#submissions
+
+  - titles: 
       en      : &EN       Dates
     url : /index.html#dates
   
