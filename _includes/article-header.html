@@ -17,11 +17,12 @@
   {%- assign _show_edit_on_github = __return -%}
 
   {%- if _show_title or _show_edit_on_github -%}
-    <div class="article__header" style="text-align: center; max-width:500px; margin-left:auto; margin-right: auto;">
+    <div class="article__header" style="text-align: center; max-width:700px; margin-left:auto; margin-right: auto;">
       {%- if _show_title -%}
-        <header><h1 style="">{{ _article_title }}</h1></header>
+        <header><h1>{{ _article_title }}</h1></header>
         <header><h3 style="color:#37C8AB">{{ _article_subtitle }}</h3></header>
         <header><h3 style="color:#fff">@ KR2021</h3></header>
+        <header><h5 style="color:rgb(212, 50, 50)"><b>November 3-7, 2021</b></h5></header>
       {%- endif -%}
       {%- if _show_edit_on_github -%}
         {%- if site.repository and site.repository_tree -%}

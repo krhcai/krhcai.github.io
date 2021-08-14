@@ -5,10 +5,60 @@
     overflow: hidden;
     border-radius: 50%;
   }
+
+  .image-cropper-small {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+  }
   
   img {
     display: inline;
     margin: 0 auto;
     height: 100%;
     width: auto;
+  }
+
+  .bio{
+    font-size: 13px; margin-top:10px; text-align: justify; color:#555
+  }
+
+  .abstract{
+    margin-left:20px; text-align: left;
+  }
+
+  .abstract-title{
+    margin-left:20px; font-weight:600; margin-top:20px;
+  }
+
+  .name{
+    margin-bottom: 0px;
+    padding-top: 30px;
+    color:#112233;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  .affil{
+    color:#25a087;
+    margin-top:0px;
+  }
+
+  .name-org{
+    margin-bottom: 0px;
+    padding-top: 20px;
+    color:#112233;
+    font-weight: 510;
+    font-size: 1rem;
+  }
+
+  .affil-org{
+    color:#25a087;
+    margin-top:0px;
+  }
+
+  .org{
+    float:left; width: 350px; margin-right:20px; margin-top:20px; padding:10px;
   }
