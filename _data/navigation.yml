@@ -1,21 +1,25 @@
 header:
   - titles: 
       en      : &EN       Home
-    url : /index.html#home
-  
-  - titles: 
-      en      : &EN       Topics
-    url : /index.html#topics
+    url : /index.html
 
   - titles: 
-      en      : &EN       Submissions
-    url : /index.html#submissions
-
-  - titles: 
-      en      : &EN       Dates
-    url : /index.html#dates
+      en      : &EN       Call
+    url : /call
   
   - titles: 
-      en      : &EN       Organization
-    url : /index.html#organization
+      en      : &EN       Speakers
+    url : /#speakers
+
+  # - titles: 
+  #     en      : &EN       Submissions
+  #   url : /call#submissions
+
+  # - titles: 
+  #     en      : &EN       Dates
+  #   url : /call#dates
+  
+  - titles: 
+      en      : &EN       Organization & PC
+    url : /#organizers
     
