@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="krhcai.svg">
+   sodipodi:docname="logo.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -26,15 +26,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.71"
-     inkscape:cx="-67.246469"
-     inkscape:cy="209.25248"
+     inkscape:cx="-337.669"
+     inkscape:cy="201.506"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:window-width="1920"
-     inkscape:window-height="1136"
+     inkscape:window-height="1173"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1">
@@ -52,7 +52,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -67,7 +67,7 @@
        height="96.676697"
        x="167.98161"
        y="-86.715744"
-       style="stroke-width:0.46391836"
+       style="stroke-width:0.46391836;fill:#f2f2f2"
        transform="matrix(0.84599834,0.53318553,0.65308097,-0.75728809,0,0)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
@@ -77,7 +77,7 @@
        height="96.676697"
        x="-23.127018"
        y="99.539162"
-       style="stroke-width:0.46391836"
+       style="stroke-width:0.46391836;fill:#f2f2f2"
        transform="matrix(0.84599834,-0.53318553,0.65308096,0.75728809,0,0)"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />

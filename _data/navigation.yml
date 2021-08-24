@@ -20,6 +20,6 @@ header:
   #   url : /call#dates
   
   - titles: 
-      en      : &EN       Organization
-    url : /call#organization
+      en      : &EN       Organization & PC
+    url : /#organizers
     
