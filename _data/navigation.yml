@@ -4,8 +4,8 @@ header:
     url : /index.html
 
   - titles: 
-      en      : &EN       Call
-    url : /call
+      en      : &EN       Register
+    url : /#register
   
   - titles: 
       en      : &EN       Speakers
@@ -23,3 +23,6 @@ header:
       en      : &EN       Organization & PC
     url : /#organizers
     
+  - titles: 
+      en      : &EN       Call
+    url : /call
