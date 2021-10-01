@@ -45,6 +45,12 @@
 
 .hero--dark {
   @extend .text--dark;
+
+  background-image: radial-gradient(rgb(23, 46, 70) 10%, #123 20%);
+  background-position: 0 0;
+  background-size: 10px 10px;
+  height:100%;
+  width: 100%;
 }
 
 .hero__content {

@@ -15,7 +15,12 @@
 
 .header--dark {
   @extend .text--dark;
-  background: rgba(#000, .15);
+  // background: rgba(#000, .15);
+  background-image: radial-gradient(rgb(23, 46, 70) 10%, #123 20%);
+  background-position: 0 0;
+  background-size: 10px 10px;
+  height:100%;
+  width: 100%;
   .navigation__item--active {
     &::after {
       @include split-line(bottom, 4px, $text-color-theme-dark);
