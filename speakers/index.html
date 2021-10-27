@@ -1,31 +1,42 @@
 ---
 layout: article_home
-<!-- title: Knowledge Representation for Hybrid and Compositional AI (KRHCAI 2021 Workshop)
-subtitle: To be held jointly with the  KR2021 Conference -->
-title:  KRHCAI 2021
-subtitle: Workshop on Knowledge Representation for Hybrid & Compositional AI
-subtitle2: at KR2021
-subtitle3: 3rd November 2021, UTC 08:30 - 15:00
-
+<!-- title: Knowledge  -->
 header:
   theme: dark
   background: '#123'
-article_header:
+<!-- article_header:
   type: overlay
   theme: dark
   background_color: '#123'
-  background_image: false
+  background_image: false -->
 key: page-index
 ---
-
 <!-- Just say something about yourself. :+1:
 
 {% highlight javascript %}
 (() => console.log('hello, world!'))();
 {% endhighlight %} -->
 
-<div style="padding-top: 50px">
-    <div>
+<script>
+    function readMoreLess(i) {
+      var dots = document.getElementById("dots"+ i);
+      var moreText = document.getElementById("more" + i);
+      var btnText = document.getElementById("btn"+ i);
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "More"; 
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Less"; 
+        moreText.style.display = "inline";
+      }
+    }
+</script>
+
+<div >
+    <!-- <div>
         AI research over the past few decades has highlighted the strengths and weaknesses of both symbolic and machine learning approaches to AI, with some weaknesses in one being strengths in the other. Much is also known about the fragmentation of the field along these two approaches. However, recent discussions in AI have highlighted the need to integrate both symbolic and sub-symbolic methods, in a hybrid approach to AI, to create novel techniques that leverage both reasoning and learning. 
 
         This workshop seeks to contribute to this discussion by exploring the following: 
@@ -43,7 +54,7 @@ key: page-index
 
     </div>
     <br/>
-    <div style="color:rgb(241, 57, 57)">Date: <b>3rd November 2021</b>, Time: <b>UTC 08:30 - 15:00</b></div>
+    <div style="color:rgb(182, 5, 5)">Date: <b>3rd November 2021</b>, Time: <b>UTC 08:30 - 15:00</b></div>
     <br/>
 
     <a name="register"></a>
@@ -52,16 +63,16 @@ key: page-index
     <a href="https://kr2021.kbsg.rwth-aachen.de/page/registration" target="_blank">Click this link to register</a> on the KR2020 website.   
     <div style="clear:both;"></div>
 
-    
+     -->
 
 
 
-    <!-- <a name="speakers"></a>
+    <a name="speakers"></a>
     <h2>Invited Speakers and Panel</h2>
     <br/>
     <div>
         <div class="image-cropper" style="float:left;  margin-right: 20px">
-            <img src="assets/images/speakers/ag.png" class="rounded" />
+            <img src="../assets/images/speakers/ag.png" class="rounded" />
         </div>
         <div style="float:left;">
             <div class="name">Dr. Alexander Gray</div>
@@ -69,7 +80,8 @@ key: page-index
             
         </div>
         <div style="clear:both;"></div>
-        <h4 class="abstract-title">Logical Neural Networks</h4>
+        <!-- <div style="margin-left:20px; margin-top: 30px; color:rgb(53, 17, 17); font-size:12px"><i>Abstract</i></div> -->
+        <h4 class="abstract-title">Logical Neural Networks</h4> <!-- TODO: incomplete title-->
         <div class="abstract">
             Recently there has been renewed interest in the long-standing goal of somehow unifying the capabilities of both statistical 
             AI (learning and prediction) and symbolic AI (knowledge representation and reasoning).  We introduce Logical Neural Networks, 
@@ -86,19 +98,22 @@ key: page-index
         </div>
         <div class="bio">
             Alexander Gray serves as VP of Foundations of AI at IBM, and currently leads a global research program in Neuro-Symbolic AI at IBM.  
-            He received AB degrees in Applied Mathematics and Computer Science from UC Berkeley and a PhD in Computer Science from Carnegie Mellon University.  
+            He received AB degrees in Applied Mathematics and Computer Science from UC Berkeley and a PhD in Computer Science 
+            <span id="dots1">...</span><span id="more1" style="display: none;">
+            from Carnegie Mellon University. 
             Before IBM he worked at NASA, served as a tenured Associate Professor at the Georgia Institute of Technology, 
             and co-founded and sold an AI startup in Silicon Valley.  His work on machine learning, statistics, and algorithms for massive datasets, 
             predating the movement of "big data" in industry, has been honored with a number of research honors including multiple best paper awards, 
             the NSF CAREER Award, selection as a National Academy of Sciences Kavli Scholar, and service as a member of the 
             2010 National Academy of Sciences Committee on the Analysis of Massive Data.  His current interests generally revolve around the 
-            injection of non-mainstream ideas into ML/AI to attempt to break through long-standing bottlenecks of the field. 
+            injection of non-mainstream ideas into ML/AI to attempt to break through long-standing bottlenecks of the field.
+            </span><button onclick="readMoreLess(1)" id="btn1" class="btn-more-less">More</button>
         </div>
     </div>
 
     <div style="margin-top:50px">
         <div class="image-cropper" style="float:left;  margin-right: 20px">
-            <img src="assets/images/speakers/ar.png" class="rounded" />
+            <img src="../assets/images/speakers/ar.png" class="rounded" />
         </div>
         <div style="float:left;">
             <div class="name">Prof. Alessandra Russo</div>
@@ -106,7 +121,7 @@ key: page-index
             
         </div>
         <div style="clear:both;"></div>
-        
+        <!-- <div style="margin-left:20px; margin-top: 30px; color:rgb(53, 17, 17); font-size:12px"><i>Abstract</i></div> -->
         <h4 class="abstract-title">Symbolic Machine Learning and its role in Neuro-symbolic AI</h4>
         <div class="abstract">
             Learning interpretable models from data is one of the main challenges of AI. Over the last two decades there has been growing 
@@ -124,18 +139,20 @@ key: page-index
         </div> 
         <div class="bio">
             Alessandra Russo is Professor of Applied Computational Logic at the Department of Computing, Imperial College London, 
-            where she leads the Structured and Probabilistic Intelligent Knowledge Engineering (SPIKE) group. She has strong expertise 
+            where she leads the Structured and Probabilistic Intelligent Knowledge Engineering (SPIKE) group. She has strong expertise
+            <span id="dots2">...</span><span id="more2" style="display: none;"> 
             in Computational Logic, Knowledge Representation, Symbolic Machine Learning, and Probabilistic inference. 
             She has pioneered new Symbolic Machine Learning algorithms, which are among the state-of-the-art learning systems, 
             and gained an established track record on the application of these systems to failure prediction, policy and preference 
             learning, classification, and recommendation learning. She has been Editor-in-chief of IET Software, 
             Editor of ACM Computing Surveys and is currently Associate Editor of the TPLP journal for the area of Logic and Machine Learning.
+            </span><button onclick="readMoreLess(2)" id="btn2" class="btn-more-less">More</button>
         </div>
     </div>
 
     <div style="margin-top:50px">
         <div class="image-cropper" style="float:left;  margin-right: 20px">
-            <img src="assets/images/speakers/pm.png" class="rounded" />
+            <img src="../assets/images/speakers/pm.png" class="rounded" />
         </div>
         <div style="float:left;">
             <div class="name">Dr. Pasquale Minervini</div>
@@ -143,7 +160,7 @@ key: page-index
             
         </div>
         <div style="clear:both;"></div>
-        
+        <!-- <div style="margin-left:20px; margin-top: 30px; color:rgb(53, 17, 17); font-size:12px"><i>Abstract</i></div> -->
         <h4 class="abstract-title">From Complex Query Answering to Neural Theorem Proving</h4>
         <div class="abstract">
             Neural link predictors are immensely useful for identifying missing edges in large scale Knowledge Graphs. 
@@ -167,7 +184,9 @@ key: page-index
         <div class="bio">
             Pasquale Minervini is a Senior Research Fellow at University College London (UCL). 
             He received a PhD in Computer Science from University of Bari, Italy, with a thesis on relational learning. 
-            After his PhD, he worked as a postdoc researcher at the University of Bari, and at the INSIGHT Centre for 
+            After his PhD, he worked as a postdoc researcher at the 
+            <span id="dots3">...</span><span id="more3" style="display: none;">  
+            University of Bari, and at the INSIGHT Centre for 
             Data Analytics (INSIGHT), where he worked in close collaboration with researchers and engineers from INSIGHT 
             and Fujitsu Ireland Research and Innovation. Pasquale published peer-reviewed papers in top-tier AI conferences, 
             receiving three best paper awards (including an Outstanding Paper Award at ICLR 2021), participated in the 
@@ -176,12 +195,13 @@ key: page-index
             He is the main inventor of a patent application assigned to Fujitsu Ltd, and he was recently awarded a seven-figures 
             H2020 research grant involving applications of relational learning to cancer research, and several other research 
             grants from industry. For more information about him, see <a href="http://www.neuralnoise.com" target="_blank">http://www.neuralnoise.com</a>
+            </span><button onclick="readMoreLess(3)" id="btn3" class="btn-more-less">More</button>
         </div>
     </div>    
 
     <div style="margin-top:50px">
         <div class="image-cropper" style="float:left;  margin-right: 20px">
-            <img src="assets/images/speakers/ab.png" class="rounded" />
+            <img src="../assets/images/speakers/ab.png" class="rounded" />
         </div>
         <div style="float:left;">
             <div class="name">Dr. Antoine Bosselut</div>
@@ -189,7 +209,7 @@ key: page-index
             
         </div>
         <div style="clear:both;"></div>
-        
+        <!-- <div style="margin-left:20px; margin-top: 30px; color:rgb(53, 17, 17); font-size:12px"><i>Abstract</i></div> -->
         <h4 class="abstract-title">Symbolic Scaffolds for Neural Commonsense Representation and Reasoning</h4>
         <div class="abstract">
             Situations described using natural language are richer than what humans explicitly communicate. 
@@ -204,10 +224,13 @@ key: page-index
         </div> 
         <div class="bio">
             Antoine Bosselut is an assistant professor in the School of Computer and Communication Sciences at the École Polytechnique Fédéral de Lausanne (EPFL).
-            Previously, he was a postdoctoral scholar at Stanford University and a Young Investigator at the Allen Institute for AI (AI2). 
-            He completed his PhD at the University of Washington in 2020. 
+            Previously, he was a postdoctoral scholar at Stanford University and a Young Investigator              
+            <span id="dots4">...</span><span id="more4" style="display: none;"> 
+            at the Allen Institute for AI (AI2). He completed his PhD 
+            at the University of Washington in 2020. 
             He was recently named as one of the Forbes 30 under 30 list for Science and Healthcare. 
             His research is on building knowledge-aware NLP systems, specializing in commonsense representation and reasoning.
+            </span><button onclick="readMoreLess(4)" id="btn4" class="btn-more-less">More</button>
         </div>
     </div>
 
@@ -215,7 +238,7 @@ key: page-index
 
     <div style="margin-top:50px">
         <div class="image-cropper" style="float:left;  margin-right: 20px">
-            <img src="assets/images/speakers/jl.png" class="rounded" />
+            <img src="../assets/images/speakers/jl.png" class="rounded" />
         </div>
         <div style="float:left;">
             <div class="name">Dr. Jaehun Lee</div>
@@ -225,15 +248,18 @@ key: page-index
         <div class="bio_panel">
             Dr. Jaehun Lee is currently a researcher at Samsung Research, working in the space of large knowledge graph construction, 
             reasoning and its applications for mobile phones and consumer electronics. The applications include search and recommendations 
-            for virtual assistants, diagnosis and treatment recommendations for call center operation, data curation to unify heterogeneous data. 
+            for virtual assistants, diagnosis and treatment recommendations for call center operation, data curation to unify heterogeneous data.
+            <!-- <span id="dots5">...</span><span id="more5" style="display: none;">  -->
+            
             In the past, he has worked on various research topics such as knowledge representation, ontology reasoning, and machine learning.
+            <!-- </span><button onclick="readMoreLess(5)" id="btn5" class="btn-more-less">More</button> -->
         </div>
     </div>
     
 
     <div style="margin-top:50px">
         <div class="image-cropper" style="float:left;  margin-right: 20px">
-            <img src="assets/images/speakers/vb.png" class="rounded" />
+            <img src="../assets/images/speakers/vb.png" class="rounded" />
         </div>
         <div style="float:left;">
             <div class="name">Dr. Vaishak Belle</div>
@@ -245,104 +271,24 @@ key: page-index
             an Alan Turing Institute Faculty Fellow, a Royal Society University Research Fellow, and a member of the 
             RSE (Royal Society of Edinburgh) Young Academy of Scotland. At the University of Edinburgh, 
             he directs a research lab on artificial intelligence, specialising in the unification of logic and 
-            machine learning, with a recent emphasis on explainability and ethics. He has given research seminars 
-            at numerous academic institutions, tutorials at AI conferences, and talks at venues such as Ars Electronica 
+            machine learning, with a recent emphasis on explainability and ethics. He has given research seminars
+            <span id="dots6">...</span><span id="more6" style="display: none;">  
+            at numerous academic institutions, tutorials at AI conferences, and talks at venues such as Ars Electronica
             and the Samsung AI Forum. He has co-authored over 50 scientific articles on AI, at venues such as IJCAI, 
             UAI, AAAI, MLJ, AIJ, JAIR, AAMAS, and along with his co-authors, he has won the Microsoft best paper award 
             at UAI, the Machine learning journal best student paper award at ECML-PKDD, and the Machine learning journal 
             best student paper award at ILP. In 2014, he received a silver medal by the Kurt Goedel Society. 
             Recently, he has consulted with major banks on explainable AI and its impact in financial institutions.
+            </span><button onclick="readMoreLess(6)" id="btn6" class="btn-more-less">More</button>
         </div>
-    </div> -->
-
-    <a name="program"></a>
-    <br/>
-    <h2>Program</h2>
-    <div>
-        <table class="styled-table">
-            <thead>
-                <tr>
-                    <th>Time (UTC)</th>
-                    <th>Item</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>08:30 - 08:45</td> 
-                    <td>Welcome & Introduction</td>
-                </tr>
-                <tr>
-                    <td>08:45 - 09:45</td> 
-                    <td>
-                        Invited Talk by <span class='speaker'>Alexander Gray </span>                       
-                        <div class="title">Logical Neural Networks</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>09:45 - 09:55</td> 
-                    <td>
-                        Lightning Talk by <span class='speaker'>Kwabena Nuamah</span>
-                        <div class="title">Deep Algorithmic Question Answering: Towards a Compositionally Hybrid AI for Algorithmic Reasoning</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>09:55 - 10:55</td> 
-                    <td>
-                        Invited Talk by  <span class='speaker'>Antoine Bosselut</span>
-                        <div class="title">Symbolic Scaffolds for Neural Commonsense Representation and Reasoning </div>
-                    </td>
-                </tr>
-                <tr class="active-row"><td >10:55 - 11:00</td> <td>Coffee Break</td></tr>
-                <tr>
-                    <td>11:00 - 11:10</td> 
-                    <td>Lightning Talk by <span class='speaker'>Chloé Mercier</span>
-                        <div class="title">Ontology as Neuronal-Space Manifold: Towards Symbolic and Numerical Artificial Embedding </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>11:10 - 12:10</td> 
-                    <td>Invited Talk by <span class='speaker'>Alessandra Russo</span>
-                        <div class="title">Symbolic Machine Learning and its role in Neuro-symbolic AI </div>
-                    </td>
-                </tr>
-                <tr class="active-row"><td >12:10 - 12:50</td> <td>Break </td></tr>
-                <tr>
-                    <td>12:50 - 13:00</td> 
-                    <td>
-                        Lightning Talk by <span class='speaker'>Patrick Kage</span>
-                        <div class="title">Class Introspection: A Novel Technique for Detecting Unlabeled Subclasses by Leveraging Classifier Explainability Methods </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>13:00 - 14:00</td> 
-                    <td>
-                        Invited Talk by <span class='speaker'>Pasquale Minervini</span>
-                        <div class="title">From Complex Query Answering to Neural Theorem Proving</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>14:00 - 15:00</td> 
-                    <td>
-                        <span class='speaker'>Panel Discussion</span>
-                        <div class="title">Alexander Gray, Antoine Bosselut, Alessandra Russo, Pasquale Minervini, Vaishak Belle, Jaehun Lee </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>15:00 - 15:20</td> 
-                    <td>
-                        General Discussion & Wrap Up
-                    </td>
-                </tr>
-            </tbody>
-        </table>
     </div>
+
+    <a name="Agenda"></a>
+    <!-- Pending -->
+
     
 
-    <div style="margin-top:30px;">
-        More about our <a href="/speakers">invited speakers and panel here </a>.
-    </div>
-
-
+<!-- 
     
 
     <a name="organizers"></a>
@@ -352,7 +298,7 @@ key: page-index
     <div>
         <div class="org">
             <div class="image-cropper-small" style="float:left;  margin-right: 20px">
-                <img src="assets/images/speakers/kn.png" class="rounded" />
+                <img src="../assets/images/speakers/kn.png" class="rounded" />
             </div>
             <div style="float:left;">
                 <div class="name-org">Dr. Kwabena Nuamah</div>
@@ -363,7 +309,7 @@ key: page-index
 
         <div class="org">
             <div class="image-cropper-small" style="float:left;  margin-right: 20px">
-                <img src="assets/images/speakers/et.png" class="rounded" />
+                <img src="../assets/images/speakers/et.png" class="rounded" />
             </div>
             <div style="float:left;">
                 <div class="name-org">Dr. Efi Tsamoura</div>
@@ -373,7 +319,7 @@ key: page-index
 
         <div class="org">
             <div class="image-cropper-small" style="float:left;  margin-right: 20px">
-                <img src="assets/images/speakers/pk.png" class="rounded" />
+                <img src="../assets/images/speakers/pk.png" class="rounded" />
             </div>
             <div style="float:left;">
                 <div class="name-org">Dr. Pavan Kapanipathi</div>
@@ -383,7 +329,7 @@ key: page-index
 
         <div class="org">
             <div class="image-cropper-small" style="float:left;  margin-right: 20px">
-                <img src="assets/images/speakers/jp.png" class="rounded" />
+                <img src="../assets/images/speakers/jp.png" class="rounded" />
             </div>
             <div style="float:left;">
                 <div class="name-org">Dr. Jeff Z. Pan</div>
@@ -399,12 +345,11 @@ key: page-index
             <li>Massimiliano Patacchiola (University of Cambridge)</li>
             <li>Paolo Pareti (University of Winchester)</li>
             <li>Pavlos Andreadis (University of Edinburgh</li>
-            <!-- <li>Ibrahim Abdelaziz (IBM Research)</li> -->
         </ul>
     </div>
     </div>
 
-    
+     -->
     
     
     

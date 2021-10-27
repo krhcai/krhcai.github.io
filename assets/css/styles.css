@@ -26,7 +26,8 @@
   }
 
   .bio_panel{
-    font-size: 15px; margin-top:20px; text-align: justify; color:#000
+    margin-top:20px; 
+    text-align: left; color:#000
   }
 
 
@@ -67,3 +68,72 @@
   .org{
     float:left; width: 350px; margin-right:20px; margin-top:20px; padding:10px;
   }
+
+  .btn-more-less{
+    color: #b30000;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+
+
+  /* table style from https://dev.to/dcodeyt/creating-beautiful-html-tables-with-css-428l*/
+  .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    display: table !important;
+}
+
+.styled-table thead tr {
+  background-color: #37C8AB;
+  color: #112233;
+  text-align: left;}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: thin solid #dddddd;
+}
+
+.styled-table tr th:first-child {
+  width: 120px;
+}
+
+.styled-table tr th {
+  width: max-content;
+}
+
+.styled-table tr td{
+  vertical-align: top;
+}
+
+.styled-table tr td .speaker{
+  font-weight: 600;
+  color: #000000;
+}
+
+.styled-table tr td .title{
+  font-weight: 500;
+  color: #009879;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #37C8AB;
+}
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+/* end of table */

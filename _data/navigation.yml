@@ -2,6 +2,9 @@ header:
   - titles: 
       en      : &EN       Home
     url : /index.html
+  - titles: 
+      en      : &EN       Program
+    url : /#program
 
   - titles: 
       en      : &EN       Register
@@ -9,7 +12,7 @@ header:
   
   - titles: 
       en      : &EN       Speakers
-    url : /#speakers
+    url : /speakers
 
   # - titles: 
   #     en      : &EN       Submissions
