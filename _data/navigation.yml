@@ -2,13 +2,14 @@ header:
   - titles: 
       en      : &EN       Home
     url : /index.html
+
+  - titles: 
+      en      : &EN       Join
+    url : /#join
+
   - titles: 
       en      : &EN       Program
     url : /#program
-
-  - titles: 
-      en      : &EN       Register
-    url : /#register
   
   - titles: 
       en      : &EN       Speakers
